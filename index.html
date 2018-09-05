@@ -62,6 +62,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-会话跟踪" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/05/会话跟踪/" class="article-date">
+  <time datetime="2018-09-05T00:39:15.000Z" itemprop="datePublished">2018-09-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/05/会话跟踪/">会话跟踪</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>会话指客户端打开与服务器的连接发出请求到服务器响应客户端请求的全过程。</p>
+<p>会话跟踪指对同一个用户对服务器的连续的请求和接受响应的监视。</p>
+<p>浏览器与服务器之间的通信是通过HTTP协议进行通信的，HTTP协议是”无状态”的协议，它不能保存客户的信息。一次响应完成之后连接就断开，下一次请求需要重新连接。这就需要判断是否是同一个用户，这就需要会话跟踪技术实现。</p>
+<p>四种方法：<br>1.URL重写   在URL结尾添加一个附加数据以标识该会话，把会话ID通过URL的信息传递过去，以便在服务器端进行识别不同的用户。<br>2.隐藏表单域<br>把会话ID添加到HTML表单元素中提交到服务器，该表单不在客户端显示<br>3.Cookie<br>Cookie是Web服务器发送给客户端的一小段信息，客户端请求时可以读取该信息发送到服务器端，进而进行用户的识别。对于客户端的每次请求，服务器都会将Cookie发送到客户端,在客户端可以进行保存,以便下次使用。客户端可以采用两种方式来保存这个Cookie对象，一种方式是保存在客户端内存中，称为临时Cookie，浏览器关闭后这个Cookie对象将消失。另外一种方式是保存在客户机的磁盘上，称为永久Cookie。以后客户端只要访问该网站，就会将这个Cookie再次发送到服务器上，前提是这个Cookie在有效期内。 这样就实现了对客户的跟踪。Cookie是可以被禁止的.<br>4.session<br>每一个用户都有一个不同的session，各个用户之间是不能共享的，是每个用户所独享的，在session中可以存放信息。在服务器端会创建一个session对象，产生一个sessionID来标识这个session对象，然后将这个sessionID放入到Cookie中发送到客户端，下一次访问时，sessionID会发送到服务器，在服务器端进行识别不同的用户Session是依赖Cookie的，如果Cookie被禁用，那么session也将失效。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/05/会话跟踪/" data-id="cjlofghbl0004uccjv8nzrmgr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Map的四种遍历方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/04/Map的四种遍历方法/" class="article-date">
@@ -89,7 +129,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/04/Map的四种遍历方法/" data-id="cjlnnvmaw0000docj5ghh03b1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/04/Map的四种遍历方法/" data-id="cjlofghbh0002uccjnilb79qh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/04/java基础知识/" data-id="cjlnnvmba0003docjwgyxmg2f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/04/java基础知识/" data-id="cjlofghbe0001uccjjqksypvw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +204,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/29/Hexo-Github搭建博客/" data-id="cjlnnvmb80002docjekt9e48n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/29/Hexo-Github搭建博客/" data-id="cjlofghb70000uccjmknv3rro" class="article-share-link">Share</a>
       
       
     </footer>
@@ -209,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/29/hello-world/" data-id="cjlnnvmb40001docj8j3eootu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/29/hello-world/" data-id="cjlofghbj0003uccj6an8yid6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -248,6 +288,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/09/05/会话跟踪/">会话跟踪</a>
+          </li>
         
           <li>
             <a href="/2018/09/04/Map的四种遍历方法/">Map的四种遍历方法</a>
