@@ -62,6 +62,43 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Spring学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/10/Spring学习/" class="article-date">
+  <time datetime="2018-09-10T01:20:44.000Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/Spring学习/">Spring学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Spring是一个开源的轻量级JavaSE（Java标准版本）/JavaEE（Java企业版本）开发应用框架，其目的是用于简化企业级应用程序开发。在传统应用程序开发中，一个完整的应用是由一组相互协作的对象组成的。所以开发一个应用除了要开发业务逻辑之外，最多的是关注使这些对象协作来完成所需功能的同时，实现低耦合、高内聚。<br>Spring框架除了帮我们管理对象及其依赖关系，还提供像通用日志记录、性能统计、安全控制、异常处理等面向切面的能力，可以帮我们管理最头疼的数据库事务，同时，它本身提供了一套简单的JDBC访问实现，能与第三方数据库访问框架集成（如Hibernate、JPA），与各种JavaEE技术整合（如JavaMail、任务调度等等），提供一套自己的web层框架SpringMVC、而且还能非常简单的与第三方 web 框架集成。<br>Spring能帮我们根据配置文件创建及组装对象之间的依赖关系。 传统程序开发，创建对象及组装对象间依赖关系由我们在程序内部进行控制，这样会加大各个对象间的耦合，如果我们要修改对象间的依赖关系就必须修改源代码，重新编译、部署；而如果采用Spring，则由Spring根据配置文件来进行创建及组装对象间依赖关系，只需要改配置文件即可，无需重新编译。<br>Spring面向切面编程能帮助我们无耦合的实现日志记录、性能统计、安全控制。    在传统应用程序中我们可能需要在对象或方法中进行，比如权限控制、性能统计大部分是重复的，这样代码中就存在大量重复代码，即使把通用部分提取出来，仍然存在重复调用，像性能统计我们可能只是在必要时才进行，在诊断完毕后要删除这些代码；还有日志记录，比如记录一些方法访问日志、数据访问日志等等，这些都会渗透到各个访问方法中；还有权限控制，必须在方法执行时开始进行审核，可见这些工作急需优化。如果采用 Spring，这些日志记录、权限控制、性能统计从业务逻辑中分离出来，通过Spring支持的面向切面编程，动态添加这些功能，无需渗透到各个需要的方法或对象中。<br>Spring关键概念：                                        1.非侵入式设计：从框架角度可以这样理解，无需继承框架提供的类，这种设计就可以看作是非侵入式设计，如果继承了这些框架类，就是侵入设计，如果以后想更换框架，之前写过的代码几乎无法重用，如果非侵入式设计则之前写过的代码仍然可以继续使用。                                                     2.轻量级与重量级：轻量级是相对于重量级而言的，轻量级一般就是非入侵性的、所依赖的东西非常少、资源占用非常少、部署简单等等，其实就是比较容易使用，而重量级正好相反。        3.POJO：POJO（PlainOrdinaryJavaObject）简单的Java对象。它可以包含业务逻辑或持久化逻辑，但不担当任何特殊角色且不继承或不实现任何其它Java框架的类或接口。                    4.容器：在日常生活中容器就是一种盛放东西的器具，从程序设计角度看就是装对象的的对象，因为存在放入、拿出等操作，所以容器还要管理对象的生命周期。                            5.控制反转：即InversionofControl，缩写为IoC，控制反转还有一个名字叫做依赖注入（DependencyInjection），就是由容器控制程序之间的关系，而非传统实现中，由程序代码直接操控.<br>Sprin优点：                                                轻量级                                                    AOP：AOP是AspectOrientedProgramming的缩写，意思是面向切面编程。从另一个角度来考虑程序结构以完善面向对象编程（OOP），即可以通过在编译期间、装载期间或运行期间实现在不修改源代码的情况下给程序动态添加功能的一种技术。通俗点说就是把可重用的功能提取出来，然后将这些通用功能在合适的时候织入到应用程序中；比如安全，日志记录，这些都是通用的功能，我们可以把它们提取出来，然后在程序执行的合适地方植入这些代码并执行它们，从而完成需要的功能并复用了这些功能。                                             </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/10/Spring学习/" data-id="cjlvmc82t0002ascjehgcia8d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-会话跟踪" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/05/会话跟踪/" class="article-date">
@@ -92,7 +129,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/05/会话跟踪/" data-id="cjlrg9eix0004sccjqkv7vi0m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/05/会话跟踪/" data-id="cjlvmc83p0005ascjfdhnx0o2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -151,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/04/Map的四种遍历方法/" data-id="cjlrg9eit0002sccjvywp0koi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/04/Map的四种遍历方法/" data-id="cjlvmc81d0000ascji90j1yv6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -189,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/04/java基础知识/" data-id="cjlrg9eiv0003sccjwskf9118" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/04/java基础知识/" data-id="cjlvmc82v0003ascjf9cddfae" class="article-share-link">Share</a>
       
       
     </footer>
@@ -227,7 +264,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/29/Hexo-Github搭建博客/" data-id="cjlrg9eio0001sccjllp6l1ae" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/29/Hexo-Github搭建博客/" data-id="cjlvmc82q0001ascj7fh4ta5p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -272,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/29/hello-world/" data-id="cjlrg9eif0000sccjnlaf0ng6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/29/hello-world/" data-id="cjlvmc82w0004ascjovp654yg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -313,6 +350,10 @@
       <ul>
         
           <li>
+            <a href="/2018/09/10/Spring学习/">Spring学习</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/05/会话跟踪/">会话跟踪</a>
           </li>
         
@@ -326,10 +367,6 @@
         
           <li>
             <a href="/2018/08/29/Hexo-Github搭建博客/">Hexo Github搭建博客</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/29/hello-world/">Hello World</a>
           </li>
         
       </ul>
